@@ -39,7 +39,9 @@ height: 100%;
     background-color: #9f340c; /* Cor da navbar */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
+.navbar {
+    padding: 0.5rem 1rem; /* Ajuste o padding conforme necessário */
+}
 .navbar-toggler {
     border: none; /* Remove a borda */
 }
@@ -65,10 +67,21 @@ height: 100%;
     content: '\f00d'; /* Código Font Awesome para o ícone de fechar */
 }
 .navbar-brand img {
-    width: 110px; /* Ajuste conforme necessário */
+    width: 50px; /* Ajuste conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
 }
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.3rem 0.5rem; /* Menor padding para a navbar em dispositivos móveis */
+    }
 
+    .navbar .nav-link {
+        font-size: 0.9rem; /* Reduzir o tamanho da fonte dos links */
+    }
+
+ 
+}
 /* Ajustes de responsividade */
 @media (max-width: 768px) {
     .navbar-toggler {
@@ -80,7 +93,8 @@ height: 100%;
 footer {
     background: #9f340c;
     color: white;
-    font-family: 'Bebas Neue';
+    font-family: 'Open Sans', sans-serif; /* Aplicar a fonte escolhida */
+
 }
 
 
