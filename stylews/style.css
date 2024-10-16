@@ -35,3 +35,21 @@ z-index: 100;
 width: 100%;
 height: 100%;
 }
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .pdf-container {
+        padding: 5px; /* Reduzir o padding em telas menores */
+    }
+
+    iframe {
+        height: 100vh; /* Ocupar a altura total da tela */
+    }
+
+    .whatsapp-float {
+        width: 50px; /* Reduzir o tamanho do botão do WhatsApp */
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
